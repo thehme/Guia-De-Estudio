@@ -11,4 +11,6 @@
     <string name="submit_page">calificacion</string>
     <string name="submit_button">calificar respuestas</string>
     <string name="restart_button">reiniciar</string>
+    <string name="question_one">Deidad del México antiguo conocida como la "Serpiente Emplumada"</string>
+    <string name="input_hint">ingrese respuesta aquí</string>
 </resources>
