@@ -2,10 +2,13 @@
     <string name="app_name">Guía de Estudio</string>
     <string name="quiz_name">Examen de Historia y Cultura de México para el Proceso de Naturalización</string>
     <string name="start_button">Comenzar</string>
-    <string name="question_one_page">Question One</string>
-    <string name="question_two_page">Question Two</string>
-    <string name="question_three_page">Question Three</string>
-    <string name="question_four_page">Question Four</string>
-    <string name="question_five_page">Question Five</string>
-    <string name="submit_page">Quiz Completed</string>
+    <string name="next_button">Síquiente</string>
+    <string name="question_one_page">pregunta #1</string>
+    <string name="question_two_page">pregunta #2</string>
+    <string name="question_three_page">pregunta #3</string>
+    <string name="question_four_page">pregunta #4</string>
+    <string name="question_five_page">pregunta #5</string>
+    <string name="submit_page">calificacion</string>
+    <string name="submit_button">calificar respuestas</string>
+    <string name="restart_button">reiniciar</string>
 </resources>
