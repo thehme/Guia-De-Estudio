@@ -12,5 +12,9 @@
     <string name="submit_button">calificar respuestas</string>
     <string name="restart_button">reiniciar</string>
     <string name="question_one">Deidad del México antiguo conocida como la "Serpiente Emplumada"</string>
+    <string name="question_two">Las cabezas colosales son creaciones de la cultura:</string>
+    <string name="question_three">¿En dónde se encuentran las pirámides del Sol y la Luna?</string>
+    <string name="question_four">La base alimenticia de los pueblos mesoamericanos fue:</string>
+    <string name="question_five">Chichén Itzá fue una poderosa ciudad:</string>
     <string name="input_hint">ingrese respuesta aquí</string>
 </resources>
