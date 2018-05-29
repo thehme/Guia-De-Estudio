@@ -17,7 +17,7 @@ public class QuestionFiveActivity extends AppCompatActivity {
         nextQuestionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent questionIntent = new Intent(QuestionFiveActivity.this, SubmitActivity.class);
+                Intent questionIntent = new Intent(QuestionFiveActivity.this, ResultsActivity.class);
                 startActivity(questionIntent);
             }
         });

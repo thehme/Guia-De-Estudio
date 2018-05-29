@@ -8,7 +8,7 @@
     <string name="question_three_page">pregunta #3</string>
     <string name="question_four_page">pregunta #4</string>
     <string name="question_five_page">pregunta #5</string>
-    <string name="submit_page">calificacion</string>
+    <string name="results_page">calificacion</string>
     <string name="submit_button">calificar respuestas</string>
     <string name="restart_button">reiniciar</string>
     <string name="question_one">Deidad del México antiguo conocida como la "Serpiente Emplumada"</string>

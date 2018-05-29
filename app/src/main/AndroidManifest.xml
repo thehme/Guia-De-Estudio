@@ -37,8 +37,8 @@
             android:label="@string/question_five_page">
         </activity>
         <activity
-            android:name=".SubmitActivity"
-            android:label="@string/submit_page">
+            android:name=".ResultsActivity"
+            android:label="@string/results_page">
         </activity>
     </application>
 
