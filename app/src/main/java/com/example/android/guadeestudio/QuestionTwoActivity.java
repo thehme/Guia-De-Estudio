@@ -12,13 +12,15 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 public class QuestionTwoActivity extends AppCompatActivity {
+    int score = 0;
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.question_two);
 
         Intent previousIntent = getIntent();
-        final int score = previousIntent.getIntExtra("score", 0);
+        score = previousIntent.getIntExtra("score", 0);
 
         Log.v("current score", "score: " + score);
 
@@ -27,25 +29,27 @@ public class QuestionTwoActivity extends AppCompatActivity {
         nextQuestionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int score = scoreQuestion();
                 Log.v("score", "score before 2nd question: " + score);
-                int currentScore = score + scoreQuestion();
-                Log.v("score", "score after 2nd question: " + currentScore);
+                scoreQuestion();
+                Log.v("score", "score after 2nd question: " + score);
                 Intent questionIntent = new Intent(QuestionTwoActivity.this, QuestionThreeActivity.class);
-                questionIntent.putExtra("score", currentScore);
+                questionIntent.putExtra("score", score);
                 startActivity(questionIntent);
             }
         });
     }
 
-    public int scoreQuestion() {
+    public void scoreQuestion() {
         RadioGroup q2_answer = (RadioGroup) findViewById(R.id.q2_radio_group);
-        if (q2_answer.getCheckedRadioButtonId() == -1) {
-            return 0;
+        Log.v("q2_answer", "q2_answer id: " + q2_answer.getCheckedRadioButtonId());
+        if (q2_answer.getCheckedRadioButtonId() != -1) {
+            RadioButton selectedRadioButton = (RadioButton) findViewById(q2_answer.getCheckedRadioButtonId());
+            String selectedRadioButtonText = selectedRadioButton.getText().toString().toLowerCase();
+            Log.v("correctAnswer", "correctAnswer: " + selectedRadioButtonText);
+            if (selectedRadioButtonText.equals("maya")) {
+                Log.v("answer entered", "answer entered: " + selectedRadioButtonText);
+                score = score + 1;
+            }
         }
-        RadioButton selectedRadioButton = (RadioButton) findViewById(q2_answer.getCheckedRadioButtonId());
-        String selectedRadioButtonText = selectedRadioButton.getText().toString();
-        Log.v("correctAnswer", "correctAnswer: " + selectedRadioButtonText);
-        return selectedRadioButtonText.toLowerCase() == "maya" ? 1 : 0;
     }
 }
