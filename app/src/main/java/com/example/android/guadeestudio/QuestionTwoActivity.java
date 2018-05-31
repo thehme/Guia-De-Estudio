@@ -22,8 +22,6 @@ public class QuestionTwoActivity extends AppCompatActivity {
         Intent previousIntent = getIntent();
         score = previousIntent.getIntExtra("score", 0);
 
-        Log.v("current score", "score: " + score);
-
         // attach event listener to next Button
         Button nextQuestionButton = (Button) findViewById(R.id.to_q3_button);
         nextQuestionButton.setOnClickListener(new View.OnClickListener() {
