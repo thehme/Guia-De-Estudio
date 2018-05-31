@@ -17,4 +17,8 @@
     <string name="question_four">La base alimenticia de los pueblos mesoamericanos fue:</string>
     <string name="question_five">Chichén Itzá fue una poderosa ciudad:</string>
     <string name="input_hint">ingrese respuesta aquí</string>
+    <string name="q2_answer1">Maya</string>
+    <string name="q2_answer2">Olmeca</string>
+    <string name="q2_answer3">Aztec</string>
+    <string name="q2_answer4">Inca</string>
 </resources>

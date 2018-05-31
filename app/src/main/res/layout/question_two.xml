@@ -17,6 +17,45 @@
             android:textSize="32sp"
             android:paddingBottom="32dp"
             android:text="@string/question_two"/>
+
+        <RadioGroup
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            android:paddingStart="128dp"
+            android:paddingEnd="128dp"
+            android:id="@+id/q2_radio_group">
+            <RadioButton
+                android:id="@+id/radio_q2_option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/q2_answer1"
+                android:textSize="22sp"
+                android:textColor="#757575"/>
+            <RadioButton
+                android:id="@+id/radio_q2_option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/q2_answer2"
+                android:textSize="22sp"
+                android:textColor="#757575"/>
+            <RadioButton
+                android:id="@+id/radio_q2_option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/q2_answer3"
+                android:textSize="22sp"
+                android:textColor="#757575"/>
+            <RadioButton
+                android:id="@+id/radio_q2_option4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/q2_answer4"
+                android:textSize="22sp"
+                android:textColor="#757575"/>
+        </RadioGroup>
     </LinearLayout>
 
     <Button

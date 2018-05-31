@@ -6,6 +6,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.TextView;
 
 public class QuestionTwoActivity extends AppCompatActivity {
     @Override
@@ -23,9 +27,25 @@ public class QuestionTwoActivity extends AppCompatActivity {
         nextQuestionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                int score = scoreQuestion();
+                Log.v("score", "score before 2nd question: " + score);
+                int currentScore = score + scoreQuestion();
+                Log.v("score", "score after 2nd question: " + currentScore);
                 Intent questionIntent = new Intent(QuestionTwoActivity.this, QuestionThreeActivity.class);
+                questionIntent.putExtra("score", currentScore);
                 startActivity(questionIntent);
             }
         });
+    }
+
+    public int scoreQuestion() {
+        RadioGroup q2_answer = (RadioGroup) findViewById(R.id.q2_radio_group);
+        if (q2_answer.getCheckedRadioButtonId() == -1) {
+            return 0;
+        }
+        RadioButton selectedRadioButton = (RadioButton) findViewById(q2_answer.getCheckedRadioButtonId());
+        String selectedRadioButtonText = selectedRadioButton.getText().toString();
+        Log.v("correctAnswer", "correctAnswer: " + selectedRadioButtonText);
+        return selectedRadioButtonText.toLowerCase() == "maya" ? 1 : 0;
     }
 }
