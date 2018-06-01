@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textSize="32sp"
-            android:paddingBottom="32dp"
+            android:paddingBottom="16dp"
             android:text="@string/question_two"/>
 
         <RadioGroup
@@ -24,13 +24,12 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingTop="16dp"
-            android:paddingStart="128dp"
-            android:paddingEnd="128dp"
             android:id="@+id/q2_radio_group">
             <RadioButton
                 android:id="@+id/radio_q2_option1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="@string/q2_answer1"
                 android:textSize="22sp"
                 android:textColor="#757575"/>
@@ -38,6 +37,7 @@
                 android:id="@+id/radio_q2_option2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="@string/q2_answer2"
                 android:textSize="22sp"
                 android:textColor="#757575"/>
@@ -45,6 +45,7 @@
                 android:id="@+id/radio_q2_option3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="@string/q2_answer3"
                 android:textSize="22sp"
                 android:textColor="#757575"/>
@@ -52,6 +53,7 @@
                 android:id="@+id/radio_q2_option4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="@string/q2_answer4"
                 android:textSize="22sp"
                 android:textColor="#757575"/>
