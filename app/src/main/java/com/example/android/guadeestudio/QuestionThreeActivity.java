@@ -8,13 +8,15 @@ import android.view.View;
 import android.widget.Button;
 
 public class QuestionThreeActivity extends AppCompatActivity {
+    int score = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.question_three);
 
         Intent previousIntent = getIntent();
-        final int score = previousIntent.getIntExtra("score", 0);
+        score = previousIntent.getIntExtra("score", 0);
 
         Log.v("current score", "score: " + score);
 
