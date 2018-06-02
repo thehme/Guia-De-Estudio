@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.RadioButton;
 
 public class QuestionFourActivity extends AppCompatActivity {
     int score = 0;
@@ -25,9 +27,19 @@ public class QuestionFourActivity extends AppCompatActivity {
         nextQuestionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                scoreCheckboxQuestion();
+
                 Intent questionIntent = new Intent(QuestionFourActivity.this, QuestionFiveActivity.class);
+                questionIntent.putExtra("score", score);
                 startActivity(questionIntent);
             }
         });
+    }
+    public void scoreCheckboxQuestion() {
+        CheckBox q4_answer2 = (CheckBox) findViewById(R.id.checkbox_q4_option2);
+        CheckBox q4_answer4 = (CheckBox) findViewById(R.id.checkbox_q4_option4);
+        if (q4_answer2.isChecked() && q4_answer4.isChecked()) {
+            score += 1;
+        }
     }
 }
