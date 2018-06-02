@@ -15,7 +15,7 @@
     <string name="question_two">Las cabezas colosales son creaciones de la cultura:</string>
     <string name="question_three">¿En dónde se encuentran las pirámides del Sol y la Luna?</string>
     <string name="question_four">¿Cuales de las siguientes fueron instituciones coloniales?</string>
-    <string name="question_five">Chichén Itzá fue una poderosa ciudad:</string>
+    <string name="question_five">El lema \"Sufragio efectivo, no reelección\" fue la bandera política de Francisco I. Madero</string>
     <string name="input_hint">ingrese respuesta aquí</string>
     <string name="q2_answer1">Maya</string>
     <string name="q2_answer2">Olmeca</string>
@@ -25,4 +25,6 @@
     <string name="q4_answer2">La encomienda</string>
     <string name="q4_answer3">La Iglesia</string>
     <string name="q4_answer4">El visitador</string>
+    <string name="q5_true">True</string>
+    <string name="q5_false">False</string>
 </resources>
