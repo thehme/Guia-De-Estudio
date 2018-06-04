@@ -16,6 +16,7 @@
     <string name="question_three">¿En dónde se encuentran las pirámides del Sol y la Luna?</string>
     <string name="question_four">¿Cuales de las siguientes fueron instituciones coloniales?</string>
     <string name="question_five">El lema \"Sufragio efectivo, no reelección\" fue la bandera política de Francisco I. Madero</string>
+    <string name="results_page_message">Felicidades, ha completado las preguntas!</string>
     <string name="input_hint">ingrese respuesta aquí</string>
     <string name="q2_answer1">Maya</string>
     <string name="q2_answer2">Olmeca</string>

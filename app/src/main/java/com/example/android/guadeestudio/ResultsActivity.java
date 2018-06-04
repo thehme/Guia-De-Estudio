@@ -6,10 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class ResultsActivity extends AppCompatActivity {
     int score = 0;
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +20,10 @@ public class ResultsActivity extends AppCompatActivity {
         score = previousIntent.getIntExtra("score", 0);
 
         Log.v("current score", "score: " + score);
+
+        TextView scoreValueTextView = (TextView) findViewById(R.id.score_value);
+        float scorePercentage = (score / 5) * 100;
+        scoreValueTextView.setText(Float.toString(scorePercentage) + '%');
 
         // attach event listener to start Button
         Button actionButton = (Button) findViewById(R.id.restart_button);

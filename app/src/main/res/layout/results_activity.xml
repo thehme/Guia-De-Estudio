@@ -13,10 +13,18 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:textSize="32sp"
             android:paddingBottom="32dp"
-            android:text="Your completed the quiz!!"/>
+            android:gravity="center"
+            android:text="@string/results_page_message"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="64sp"
+            android:paddingBottom="32dp"
+            android:gravity="center"
+            android:id="@+id/score_value"/>
     </LinearLayout>
 
     <Button
