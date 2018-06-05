@@ -28,6 +28,11 @@
     <string name="q4_answer2">La encomienda</string>
     <string name="q4_answer3">La Iglesia</string>
     <string name="q4_answer4">El visitador</string>
-    <string name="q5_true">True</string>
-    <string name="q5_false">False</string>
+    <string name="q5_true">Verdad</string>
+    <string name="q5_false">Falso</string>
+    <string name="q1_answer">1. Quetzalcóatl</string>
+    <string name="q2_answer">2. Maya</string>
+    <string name="q3_answer">3. Teotihuacan</string>
+    <string name="q4_answer">4. La encomienda y el visitador</string>
+    <string name="q5_answer">5. Verdad</string>
 </resources>
