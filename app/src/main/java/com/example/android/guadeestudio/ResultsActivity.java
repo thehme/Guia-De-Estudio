@@ -40,7 +40,7 @@ public class ResultsActivity extends AppCompatActivity {
         answersButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent answersIntent = new Intent(AnswersActivity.this, MainActivity.class);
+                Intent answersIntent = new Intent(ResultsActivity.this, AnswersActivity.class);
                 startActivity(answersIntent);
             }
         });
