@@ -10,6 +10,7 @@
     <string name="question_five_page">Pregunta #5</string>
     <string name="results_page">Calificacion</string>
     <string name="submit_button">calificar respuestas</string>
+    <string name="answers_page">Respuestas</string>
     <string name="restart_button">reiniciar</string>
     <string name="answers_button">ver respuestas</string>
     <string name="question_one">Deidad del México antiguo conocida como la "Serpiente Emplumada"</string>
