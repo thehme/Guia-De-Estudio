@@ -53,5 +53,10 @@
         android:text="@string/next_button"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
+        android:textColor="@color/colorTextSecondary"
+        android:background="@drawable/secondary_button"
+        android:textSize="20sp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
         android:id="@+id/to_q5_button"/>
 </RelativeLayout>
