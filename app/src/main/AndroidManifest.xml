@@ -40,6 +40,9 @@
             android:name=".ResultsActivity"
             android:label="@string/results_page">
         </activity>
+        <activity
+            android:name=".AnswersActivity"
+            android:label="@string/answers_page"></activity>
     </application>
 
 </manifest>
