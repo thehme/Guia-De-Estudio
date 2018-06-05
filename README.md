@@ -8,7 +8,7 @@ for Childhood Arrivals (DACA) executive order protection that President Obama en
 traffic violation, such as a DUI, is enough to loose your DACA protection and be deported, even if
 you have been in the USA for decades.
 
-When someone is deported to Mexico, if they do not know the country, they can seek advice from the
+When someone is deported to Mexico and they do not know the country, they can seek advice from the
 Mexican immigration services. One of the things they are asked to do is to take a Mexican History and
 Culture test, the same that people looking to naturalize will do.
 
