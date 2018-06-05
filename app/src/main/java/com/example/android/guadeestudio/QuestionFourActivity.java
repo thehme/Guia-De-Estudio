@@ -36,9 +36,12 @@ public class QuestionFourActivity extends AppCompatActivity {
         });
     }
     public void scoreCheckboxQuestion() {
+        CheckBox q4_answer1 = (CheckBox) findViewById(R.id.checkbox_q4_option1);
         CheckBox q4_answer2 = (CheckBox) findViewById(R.id.checkbox_q4_option2);
+        CheckBox q4_answer3 = (CheckBox) findViewById(R.id.checkbox_q4_option3);
         CheckBox q4_answer4 = (CheckBox) findViewById(R.id.checkbox_q4_option4);
-        if (q4_answer2.isChecked() && q4_answer4.isChecked()) {
+        if (!q4_answer1.isChecked() && q4_answer2.isChecked()
+                && !q4_answer3.isChecked() && q4_answer4.isChecked()) {
             score += 1;
         }
     }
