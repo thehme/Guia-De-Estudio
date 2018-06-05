@@ -26,6 +26,6 @@ acceptable manner.
 
 # Views
 
-![portrait-screenshot](app/src/main/res/drawable/guia_portait.png)
+![portrait-screenshot](app/src/main/res/drawable/guia_portrait.png)
 
 ![landscape-screenshot](app/src/main/res/drawable/guia_landscape.png)
