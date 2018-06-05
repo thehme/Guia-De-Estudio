@@ -28,14 +28,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/q5_false"
-                android:textSize="16sp"
+                android:textSize="22sp"
                 android:textColor="#757575"/>
             <RadioButton
                 android:id="@+id/radio_q5_option2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/q5_true"
-                android:textSize="16sp"
+                android:textSize="22sp"
                 android:textColor="#757575"/>
         </RadioGroup>
     </LinearLayout>
