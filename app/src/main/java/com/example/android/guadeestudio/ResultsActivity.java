@@ -34,5 +34,15 @@ public class ResultsActivity extends AppCompatActivity {
                 startActivity(actionIntent);
             }
         });
+
+        // attach event listener to answers button
+        Button answersButton = (Button) findViewById(R.id.answers_button);
+        answersButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent answersIntent = new Intent(AnswersActivity.this, MainActivity.class);
+                startActivity(answersIntent);
+            }
+        });
     }
 }
