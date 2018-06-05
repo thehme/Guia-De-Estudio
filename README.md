@@ -23,6 +23,8 @@ acceptable manner.
 - Only one image used in welcome screen for cleanliness.
 - Intents added to access each question, results, and answers.
 - Button styles added.
+- Back button not implemented.
+- Restoring answers on rotation not implemented.
 
 # Views
 
