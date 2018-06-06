@@ -7,8 +7,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ResultsActivity extends AppCompatActivity {
+    int duration = Toast.LENGTH_SHORT;
     int score = 0;
 
     @Override
@@ -22,8 +24,11 @@ public class ResultsActivity extends AppCompatActivity {
         Log.v("current score", "score: " + score);
 
         TextView scoreValueTextView = (TextView) findViewById(R.id.score_value);
-        float scorePercentage = (score / 5) * 100;
-        scoreValueTextView.setText(Float.toString(scorePercentage) + '%');
+        Double scorePercentage = (Float.valueOf(score) * 0.2) * 100;
+        String formattedScore = String.format(Double.toString(scorePercentage), "%.2f");
+        scoreValueTextView.setText(formattedScore + '%');
+
+        Toast.makeText(getApplicationContext(), "You scored " + score + "/5 correct answers!", duration).show();
 
         // attach event listener to start Button
         Button actionButton = (Button) findViewById(R.id.restart_button);
